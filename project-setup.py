@@ -28,7 +28,10 @@ class Init:
         }
         self.create_dir(self.config["directory"])
         if os.name == "nt":
-            self.copy_file(self.settings["windows"], ".vscode/settings.json")
+            self.copy_file(
+                self.config["settings"]["files"]["windows"],
+                self.config["settings"]["target"],
+            )
         else:
             self.copy_file(
                 self.config["settings"]["files"]["unix"],
