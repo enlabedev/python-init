@@ -22,10 +22,22 @@ $ git config --local pull.rebase false
 ```
 
 ## Setup init
+Change Directory
+```bash
+# e.g.:
+$ cd python-init
+```
+
 Run python config
 ```bash
 # e.g.:
 $ python project-setup.py
+```
+
+Open VSCode
+```bash
+# e.g.:
+$ code .
 ```
 
 After Run Task after

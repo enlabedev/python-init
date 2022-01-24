@@ -5,23 +5,38 @@
       "label": "Settings in Unix",
       "type": "shell",
       "command": [
-        "pyenv install 3.8.9 &",
-        "pyenv local 3.8.9 &",
         "python -m venv .venv &",
         "source ./.venv/bin/activate &",
-        "pip install --no-cache-dir -U pip setuptools wheel &",
+        "pyenv install 3.8.9 &",
+        "pyenv local 3.8.9 &",
+        "pip install --no-cache-dir -U &",
+        "pip setuptools wheel &",
         "pip install -r pip-files/requirements-dev.txt"
       ]
     },
     {
-      "label": "Settings in Windows",
+      "label": "Settings for CMD in Windows",
       "type": "shell",
       "command": [
-        "pyenv install 3.8.9",
-        "pyenv local 3.8.9",
-        "python -m venv .venv",
-        "./.venv/Scripts/activate",
-        "pip install --no-cache-dir -U pip setuptools wheel",
+        "python -m venv .venv &",
+        "./.venv/Scripts/activate &",
+        "pyenv install 3.8.9 &",
+        "pyenv local 3.8.9 &",
+        "pip install --no-cache-dir -U &",
+        "pip setuptools wheel &",
+        "pip install -r pip-files/requirements-dev.txt"
+      ]
+    },
+    {
+      "label": "Settings for PowerShell in Windows",
+      "type": "shell",
+      "command": [
+        "python -m venv .venv ;",
+        "./.venv/Scripts/activate ;",
+        "pyenv install 3.8.9 ;",
+        "pyenv local 3.8.9 ;",
+        "pip install --no-cache-dir -U ;",
+        "pip setuptools wheel ;",
         "pip install -r pip-files/requirements-dev.txt"
       ]
     }
