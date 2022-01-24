@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Settings in Unix",
+      "type": "shell",
+      "command": [
+        "pyenv install 3.8.9 &",
+        "pyenv local 3.8.9 &",
+        "python -m venv .venv &",
+        "source ./.venv/bin/activate &",
+        "pip install --no-cache-dir -U pip setuptools wheel &",
+        "pip install -r pip-files/requirements-dev.txt"
+      ]
+    },
+    {
+      "label": "Settings in Windows",
+      "type": "shell",
+      "command": [
+        "pyenv install 3.8.9",
+        "pyenv local 3.8.9",
+        "python -m venv .venv",
+        "./.venv/Scripts/activate",
+        "pip install --no-cache-dir -U pip setuptools wheel",
+        "pip install -r pip-files/requirements-dev.txt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.testing.promptToConfigure": false,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "./.venv/bin/flake8",
+    "python.linting.flake8Args": [
+        "--max-line-length=100",
+        "--verbose"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "./.venv/bin/black",
+    "python.sortImports.path": "./.venv/bin/isort",
+    "python.analysis.logLevel": "Trace",
+    "python.analysis.typeCheckingMode": "off",
+    "python.languageServer": "Pylance",
+
+    "[python]": {
+        "editor.rulers": [
+            100
+        ],
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSaveMode": "file"
+    },
+
+    "[dockercompose]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+
+    "javascript.preferences.quoteStyle": "single",
+    "debug.javascript.usePreview": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+
+    "[JSON]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+
+    "[YAML]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+
+    "files.exclude": {
+        "**/.venv**": true,
+        "**/venv**": true,
+        "**/__pycache__": true,
+        "out": true,
+        "dist": true,
+        "**/*.pyc": true,
+        ".nyc_output": true,
+        "obj": true,
+        "bin": true,
+        "**/node_modules": true,
+        ".vscode-test": false,
+        ".vscode test": false,
+        "**/.mypy_cache/**": true
+    },
+
+    "search.exclude": {
+        "**/.venv**": true,
+        "**/venv**": true,
+        "**/__pycache__": true,
+        "out": true,
+        "dist": true,
+        "**/node_modules": true,
+        "coverage": true,
+        "languageServer*/**": true,
+        ".vscode-test": true,
+        ".vscode test": true
+    },
+
+    "typescriptHero.imports.stringQuoteStyle": "'",
+    "prettier.printWidth": 100,
+    "prettier.singleQuote": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "cucumberautocomplete.skipDocStringsFormat": true
+}
