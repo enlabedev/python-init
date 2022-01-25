@@ -8,10 +8,12 @@
       "christian-kohler.path-intellisense",
       "dbaeumer.vscode-eslint",
       "esbenp.prettier-vscode",
-      "ms-vscode.cpptools",
       "eamodio.gitlens",
       "ms-azuretools.vscode-docker",
       "mikestead.dotenv",
       "mtxr.sqltools",
+      "hbenl.vscode-test-explorer",
+      "KevinRose.vsc-python-indent",
+      "aaron-bond.better-comments"
     ]
   }

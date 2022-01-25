@@ -77,7 +77,8 @@
         "**/node_modules": true,
         ".vscode-test": false,
         ".vscode test": false,
-        "**/.mypy_cache/**": true
+        "**/.mypy_cache/**": true,
+        "**/.pytest_cache/**": true
     },
 
     "search.exclude": {
@@ -90,7 +91,8 @@
         "coverage": true,
         "languageServer*/**": true,
         ".vscode-test": true,
-        ".vscode test": true
+        ".vscode test": true,
+        "**/.pytest_cache/**": true
     },
 
     "typescriptHero.imports.stringQuoteStyle": "'",
@@ -98,5 +100,12 @@
     "prettier.singleQuote": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
-    }
+    },
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.envFile": "${workspaceFolder}/.env"
 }
